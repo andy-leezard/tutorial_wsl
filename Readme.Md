@@ -47,3 +47,13 @@ You can change the way it looks by modifying the **_.bashrc_** file located in t
 
 - Do you see the Prompt String has changed according to the **_.bashrc_** file?
 ![Alt text](/imgsrc/terminal_ubuntu_ps1_modified.png?raw=true "Optional Title")
+
+8. Change your default shell to **_zsh_**
+
+- Is zsh already installed on your linux system? Ask it by running this command: **_zsh --version_**
+- If not, it will kindly guide you to install it.
+
+- (OPTIONAL) While you're at it, install [**_OH MY ZSH_**](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH), the powerful interactive framework that helps you with zsh configuration.
+
+![Alt text](/imgsrc/github_oh_my_zsh.png?raw=true "Optional Title")
+
