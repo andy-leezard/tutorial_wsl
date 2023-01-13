@@ -32,3 +32,18 @@
 6. Check that the APT Package Manager is correctly installed by running this simple command: **_sl_**
 ![Alt text](/imgsrc/linux_sl.png?raw=true "Optional Title")
 - Oh look, this train is right on time unlike most real ones.
+
+7. OK IT'S TIME TO GET SERIOUS. Open up the real terminal tab to enter Ubuntu.
+![Alt text](/imgsrc/terminal_ubuntu.png?raw=true "Optional Title")
+
+- First thing you should know, is that whenever you start up a new Linux terminal session, it runs a startup script that you can configure in the **_.bashrc_** file. Bash is a programming language used to run codes from the terminal.
+- To get to know Bash, create an **environment variable** called "ps1" (Prompt String <sub>value</sub>) in the **_.bashrc_** file.
+- Currently you might see something like, **_:mnt/c/Users/UserName$_**. (full working directory, system name, username)
+You can change the way it looks by modifying the **_.bashrc_** file located in the Home directory.
+- If you're a mega legendary developper expert in **_Vim_**, you would know how to do it: **_vi ~/.bashrc_**
+- If you're a VS Code fan like me, as we always do: **_code ~/.bashrc_**
+
+![Alt text](/imgsrc/vscode_first_bash_env_var.png?raw=true "Optional Title")
+
+- Do you see the Prompt String has changed according to the **_.bashrc_** file?
+![Alt text](/imgsrc/terminal_ubuntu_ps1_modified.png?raw=true "Optional Title")
