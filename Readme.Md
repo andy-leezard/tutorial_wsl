@@ -20,3 +20,12 @@
 4. The magic word is **_wsl_**. This will take you to the Linux world on your Windows machine.
 
 ![Alt text](/imgsrc/terminal_run_wsl.png?raw=true "Optional Title")
+
+- (OPTIONAL) Run command: **_lsb_release -a_** to check your Ubuntu version.
+- (OPTIONAL) Run command: **_htop_** to monitor your machine.
+
+5. Get APT Package Manager by running this command: **_sudo apt-get install sl_**
+
+- (TROUBLESHOOT) It doesn't work? Let me guess, "**_E: Unable to locate package package_name_**"?
+- Don't worry, update the repository cache with this new command, and then retry the previous command.: **_sudo apt update_**
+
