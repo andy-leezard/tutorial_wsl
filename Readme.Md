@@ -29,3 +29,6 @@
 - (TROUBLESHOOT) It doesn't work? Let me guess, "**_E: Unable to locate package package_name_**"?
 - Don't worry, update the repository cache with this new command, and then retry the previous command.: **_sudo apt update_**
 
+6. Check that the APT Package Manager is correctly installed by running this simple command: **_sl_**
+![Alt text](/imgsrc/linux_sl.png?raw=true "Optional Title")
+- Oh look, this train is right on time unlike most real ones.
