@@ -73,7 +73,7 @@
 
 9. Hook things up with VS Code. Get this extension.
 
-![Alt text](/wsl/vscode_wsl_extension.png?raw=true "Optional Title")
+![Alt text](/wsl/imgsrc/vscode_wsl_extension.png?raw=true "Optional Title")
 
 - Open VS Code in the WSL.
 
