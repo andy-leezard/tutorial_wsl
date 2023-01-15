@@ -47,9 +47,13 @@
 - **_sudo apt upgrade_**
 - Tip for beginners: APT (Advanced Packaging Tool) is a command-line tool used to manage softwares.
 
-7. Install **_curl_** by running this command: **_sudo apt install curl_**
+7. Install **_curl_**: **_sudo apt install curl_**
 
-- Test if it's correctly installed and operational by running this command: **_curl help_**
+- Test if it's correctly installed and operational: **_curl help_**
+
+8. Install **_git_**: **_sudo apt install git_**
+
+- Test if it's correctly installed and operational: **git --version**
 
 8. Using **_zsh_**.
 
