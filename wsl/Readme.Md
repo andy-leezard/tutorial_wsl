@@ -9,8 +9,7 @@
 
 # STEPS (RENEWED FOR WSL2)
 
-1. Run this command as admin: **wsl --list --online**
-
+1. Run this command as admin: **`wsl --list --online`**
 - Choose one from the list of available distros. I'll go with **Debian**.
  ![Alt text](/wsl/imgsrc/terminal_wsl_list_online.png?raw=true "Optional Title")
 
@@ -20,9 +19,9 @@
 
 - This will litterally take few minutes. You have time to do some neck and shoulder stretches. Maybe some push-ups while you're at it. Health is important 💪.
 
-3. Update the WSL Kernel by running this command as admin on the regular Windows terminal: **_wsl --update_**
+3. Update the WSL Kernel by running this command as admin on the regular Windows terminal: **`wsl --update`**
 
-4. Now on the Linux terminal, run this command to check the installed Linux version: **_cat /etc/issue_**
+4. Now on the Linux terminal, run this command to check the installed Linux version: **`cat /etc/issue`**
 
 - There are also other ways to check it up depending on the distro you're using, but this is one simple way to go on Debian.
 
@@ -30,10 +29,10 @@
 
 - Tip for beginners: whenever you start up a new Linux terminal session, it runs a startup script that you can configure in the **_.bashrc_** file. Bash is a programming language used to run codes from the terminal.
 - To get to know Bash, create an **environment variable** called "ps1" (Prompt String <sub>value</sub>) in the **_.bashrc_** file.
-- Currently you might see something like, **_:mnt/c/Users/UserName$_**. (full working directory, system name, username)
+- Currently you might see something like **`:mnt/c/Users/UserName$`**.
   You can change the way it looks by modifying the **_.bashrc_** file located in the Home directory.
-- If you're a mega legendary developper expert in **_Vim_**, you would know how to do it: **_vi ~/.bashrc_**
-- If you're a VS Code fan like me, as we always do: **_code ~/.bashrc_**
+- If you're a mega legendary developper expert in **_Vim_**, you would know how to do it: **`vi ~/.bashrc`**
+- If you're a VS Code fan like me, as we always do: **`code ~/.bashrc`**
 
 ![Alt text](/wsl/imgsrc/vscode_first_bash_env_var.png?raw=true "Optional Title")
 
@@ -42,30 +41,31 @@
 ![Alt text](/wsl/imgsrc/debian_ps1_modified.png?raw=true "Optional Title")
 
 6. Update APT by running these commands:
-
-- **_sudo apt update_**
-- **_sudo apt upgrade_**
+```
+sudo apt update
+sudo apt upgrade
+```
 - Tip for beginners: APT (Advanced Packaging Tool) is a command-line tool used to manage softwares.
 
-7. Install **_curl_**: **_sudo apt install curl_**
+7. Install **_curl_**: **`sudo apt install curl`**
 
-- Test if it's correctly installed and operational: **_curl help_**
+- Test if it's correctly installed and operational: **`curl help`**
 
-8. Install **_git_**: **_sudo apt install git_**
+8. Install **_git_**: **`sudo apt install git`**
 
-- Test if it's correctly installed and operational: **git --version**
+- Test if it's correctly installed and operational: **`git --version`**
 
-8. Using **_zsh_**.
+9. Using **_zsh_**.
 
-- Is **_zsh_** already installed on your system? Ask it by running this command: **_zsh --version_**
+- Is **_zsh_** already installed on your system? Ask it by running this command: **`zsh --version`**
 
-- If not, install **_zsh_** by running this command: **_sudo apt install zsh_**
+- If not, install **_zsh_** by running this command: **`sudo apt install zsh`**
 
-- Test if it's correctly installed and operational by running this command: **_zsh --version_**
+- Test if it's correctly installed and operational by running this command: **`zsh --version`**
 
 - (RECOMMENDED) While you're at it, install [**_OH MY ZSH_**](https://github.com/ohmyzsh/ohmyzsh), the powerful interactive framework that helps you with **_zsh_** configuration. Use the curl request as instructed on the Github page.
 
-- Change your default shell to **_zsh_** if you haven't already with **_OH MY ZSH_**: **_chsh -s $(which zsh)_**
+- Change your default shell to **_zsh_** if you haven't already with **_OH MY ZSH_**: **`chsh -s $(which zsh)`**
 
 ![Alt text](/wsl/imgsrc/github_oh_my_zsh.png?raw=true "Optional Title")
 ![Alt text](/wsl/imgsrc/zsh_oh_my_zsh.png?raw=true "Optional Title")
