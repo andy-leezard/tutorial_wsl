@@ -55,6 +55,10 @@ sudo apt upgrade
 
 - Test if it's correctly installed and operational: **`git --version`**
 
+9. Install **_clang_**: **`sudo apt install clang`**
+
+- Test if it's correctly installed and operational: **`clang --version`**
+
 9. Using **_zsh_**.
 
 - Is **_zsh_** already installed on your system? Ask it by running this command: **`zsh --version`**
