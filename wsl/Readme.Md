@@ -55,6 +55,16 @@ sudo apt upgrade
 
 - Test if it's correctly installed and operational: **`git --version`**
 
+- Config Git
+```
+git config --global user.name "YOUR USERNAME"
+git config --global user.email "YOUR EMAIL ADDRESS"
+git config --global core.autocrlf input
+```
+
+- NOTE: ```git config --global core.autocrlf input``` will prevent _carriage-return_ flags (**_\r_**) confusing git state when worked both on Windows and Linux.
+- Likewise, on Windows System, the ```input``` part should be ```true``` when globally configuring git.
+
 9. Install **_clang_**: **`sudo apt install clang`**
 
 - Test if it's correctly installed and operational: **`clang --version`**
