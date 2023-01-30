@@ -42,8 +42,8 @@
 
 6. Update APT by running these commands:
 ```
-sudo apt update
-sudo apt upgrade
+$ sudo apt update
+$ sudo apt upgrade
 ```
 - Tip for beginners: APT (Advanced Packaging Tool) is a command-line tool used to manage softwares.
 
@@ -57,9 +57,9 @@ sudo apt upgrade
 
 - Config Git
 ```
-git config --global user.name "YOUR USERNAME"
-git config --global user.email "YOUR EMAIL ADDRESS"
-git config --global core.autocrlf input
+$ git config --global user.name "YOUR USERNAME"
+$ git config --global user.email "YOUR EMAIL ADDRESS"
+$ git config --global core.autocrlf input
 ```
 
 - NOTE: ```git config --global core.autocrlf input``` will prevent _carriage-return_ flags (**_\r_**) confusing git state when worked both on Windows and Linux.
