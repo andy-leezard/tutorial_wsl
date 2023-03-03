@@ -3,6 +3,7 @@
 # REQUIREMENTS
 
 1. **Windows 10 Pro** **Version 2004** <sup>(May 2020 update)</sup> **or higher**
+
 - Install available Windows updates if you have a lesser version.
 - In this tutorial, I used the version **_22H2_**.
 - If you really need to use an outdated version of Windows, use the [legacy method](/wsl/legacy1909/Readme.Md). However that will result in installing WSL1 kernel by default. You'll need to configure that separately.
@@ -10,16 +11,17 @@
 # STEPS (RENEWED FOR WSL2)
 
 1. Run this command as admin: **`wsl --list --online`**
+
 - Choose one from the list of available distros. I'll go with **Debian**.
- ![Alt text](/wsl/imgsrc/terminal_wsl_list_online.png?raw=true "Optional Title")
+  ![Alt text](/wsl/imgsrc/terminal_wsl_list_online.png?raw=true "Optional Title")
 
 2. Your system needs to reboot, let it.
 
- ![Alt text](/wsl/imgsrc/installing_debian.png?raw=true "Optional Title")
+![Alt text](/wsl/imgsrc/installing_debian.png?raw=true "Optional Title")
 
 - This will litterally take few minutes. You have time to do some neck and shoulder stretches. Maybe some push-ups while you're at it. Health is important 💪.
 
-3. Update the WSL Kernel by running this command as admin on the regular Windows terminal: **`wsl --update`**
+3. Update the WSL Kernel by running this command as admin on the regular Windows terminal: **`wsl --update`** or **`wsl.exe --update`**
 
 4. Now on the Linux terminal, run this command to check the installed Linux version: **`cat /etc/issue`**
 
@@ -41,10 +43,12 @@
 ![Alt text](/wsl/imgsrc/debian_ps1_modified.png?raw=true "Optional Title")
 
 6. Update APT by running these commands:
+
 ```
 $ sudo apt update
 $ sudo apt upgrade
 ```
+
 - Tip for beginners: APT (Advanced Packaging Tool) is a command-line tool used to manage softwares.
 
 7. Install **_curl_**: **`sudo apt install curl`**
@@ -56,14 +60,15 @@ $ sudo apt upgrade
 - Test if it's correctly installed and operational: **`git --version`**
 
 - Config Git
+
 ```
 $ git config --global user.name "YOUR USERNAME"
 $ git config --global user.email "YOUR EMAIL ADDRESS"
 $ git config --global core.autocrlf input
 ```
 
-- NOTE: ```git config --global core.autocrlf input``` will prevent _carriage-return_ flags (**_\r_**) confusing git state when worked both on Windows and Linux.
-- Likewise, on Windows System, the ```input``` part should be ```true``` when globally configuring git.
+- NOTE: `git config --global core.autocrlf input` will prevent _carriage-return_ flags (**_\r_**) confusing git state when worked both on Windows and Linux.
+- Likewise, on Windows System, the `input` part should be `true` when globally configuring git.
 
 9. Install **_clang_**: **`sudo apt install clang`**
 
