@@ -105,3 +105,5 @@ $ git config --global core.autocrlf input
 - Boom, now you're building in Linux.
 
 ![Alt text](/wsl/imgsrc/vscode_using_wsl.png?raw=true "Optional Title")
+
+- My current theme is `fletcherm`
