@@ -107,3 +107,17 @@ $ git config --global core.autocrlf input
 ![Alt text](/wsl/imgsrc/vscode_using_wsl.png?raw=true "Optional Title")
 
 - My current theme is `fletcherm`
+
+# MORE THEMES
+
+- `Agnoster`
+
+To use this theme, it is necessary to install some fonts before.
+
+```bash
+git clone https://github.com/powerline/fonts
+cd fonts
+./install.sh from terminal / command line
+```
+
+Open iTerm2->Preferences->Profiles->Change Font-> 12pt Meslo LG S DZ Regular for Powerline
