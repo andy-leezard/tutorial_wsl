@@ -8,7 +8,7 @@
 
 1. Open PowerShell. Run this command : 
 
-```
+```shell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
@@ -30,7 +30,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 - (OPTIONAL) Run command: **`_htop_`** to monitor your machine.
 
 5. Update APT by running these commands:
-```
+```bash
 sudo apt update
 sudo apt upgrade
 ```

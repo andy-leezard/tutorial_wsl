@@ -16,13 +16,13 @@ This process is tested on Debian Linux
 
 1. Install Rust via RustUp.
 
-```
+```bash
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 2. Install Cargo Watch
 
-```
+```bash
 $ cargo install cargo-watch
 ```
 
@@ -30,12 +30,12 @@ $ cargo install cargo-watch
 
 By default, it runs check. You can easily override this, though:
 
-```
+```bash
 $ cargo watch [-x command]...
 ```
 - A few examples:
 
-```
+```bash
 # Run tests only
 $ cargo watch -x test
 
@@ -54,7 +54,7 @@ $ cargo watch --features "foo,bar"
 
 3. Create a new project
 
-```
+```bash
 $ cargo new your_project_name
 ```
 
@@ -64,7 +64,7 @@ Add the necessary dependencies for SurrealDB, WebSockets and authentication to y
 
 - will be installed in a folder named "target"
 
-```
+```bash
 $ cargo check
 ```
 
@@ -73,7 +73,7 @@ If any updates are found, you will receive a message indicating the name and ver
 
 If you want to update all of the outdated dependencies in your project, you can run the following command:
 
-```
+```bash
 $ cargo update
 ```
 
